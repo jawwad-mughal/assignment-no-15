@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_wrap{
+    background-color: aqua;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+.black_box{
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 750px;
+    position: absolute;
+    transform-origin:right top;
+    rotate: 45deg;
+    z-index: 1;
+}
+.heading{
+    max-width:250px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    z-index: 1;
+}
+.heading>h1{
+    color: white;
+}
+.back{
+    margin-top: 2px;
+    color: white;
+    left: 30px;
+    top: 100px; 
+}
+.heading>p{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.4rem;
+}
+.white_box{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    right: 0px;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    padding: 25px 0px ;
+}
+.signup>h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.line{
+    height: 4px;
+    width: 15%;
+    background-color: black;
+    border-radius: 2px;
+}
+.username{
+    background-color: bisque;
+    width: 90%;
+    
+    /* padding: 10px 0px; */
+}
+.username>input{
+    width: 90%;
+}
+.username>i{
+    color: #08089e;
+}
+.username>input:focus{
+}
