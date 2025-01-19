@@ -3,12 +3,11 @@
     box-sizing: border-box;
 }
 .main_wrap{
-    background-color: aqua;
     width: 800px;
     height: 400px;
     position: relative;
     overflow: hidden;
-    margin: 50px auto;
+    margin: 150px auto;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px;
 }
@@ -49,6 +48,7 @@
     height: 100%;
     background-color: white;
     right: 0px;
+    margin-right: 20px;
 }
 .signup{
     display: flex;
@@ -69,16 +69,81 @@
     border-radius: 2px;
 }
 .username{
-    background-color: bisque;
-    width: 90%;
+    width: 95%;
+    height: 50px;
+    border-bottom: 2px solid black;
+}
+.form-group {
+    position: relative;
+    height: 45px;
+}
+
+  label {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+  }
+
+  input {
+    width: 85%;
+    height: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    background-color: white;
+  }
+  .icon {
+    position: absolute;
+    top: 35%;
+    right: 10px;
     
-    /* padding: 10px 0px; */
-}
-.username>input{
-    width: 90%;
-}
-.username>i{
-    color: #08089e;
-}
-.username>input:focus{
-}
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  input:focus {
+    outline: none;
+    background-color: white;
+  }
+
+  .fa-solid {
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  input:focus + label ,
+  input:not(:placeholder-shown) + label {
+    top: -10px;
+    color: #007BFF;
+    
+  }
+  input:focus ~ .icon {
+    color: #007BFF;
+  }
+  .username1{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+  }
+  button{
+    background-color: #065fbe;
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    color: white;
+    padding-block: 10px;
+    font-weight: 600;
+    border-radius: 50px;
+  }
+  h4{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+  span{
+    color: blue;
+  }
